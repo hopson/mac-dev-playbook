@@ -25,6 +25,17 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: ansible-pyenv
+      pyenv_brew_path: /opt/homebrew/bin
+      tags: ['python']
+    - role: rvm.ruby
+      tags: ruby
+      rvm1_rubies:
+      - 3.0.2
+      rvm1_user: "{{ ansible_user_id }}"
+      rvm1_gpg_key_servers:
+      - hkp://keyserver.ubuntu.com
+      rvm1_gpg_keys: 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
   tasks:
     - import_tasks: tasks/sudoers.yml

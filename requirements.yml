@@ -2,6 +2,12 @@
 roles:
   - name: elliotweiser.osx-command-line-tools
   - name: geerlingguy.dotfiles
+  - name: ansible-pyenv
+    src: git+ssh://git@github.com/hopson/ansible-pyenv.git
+    version: v5.0.0
+  - rvm.ruby
 
 collections:
-  - name: geerlingguy.mac
+  - name: git@github.com:hopson/ansible-collection-mac.git
+    type: git
+    version: master
