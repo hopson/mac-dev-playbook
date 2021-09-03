@@ -10,4 +10,4 @@ roles:
 collections:
   - name: git@github.com:hopson/ansible-collection-mac.git
     type: git
-    version: master
+    version: main

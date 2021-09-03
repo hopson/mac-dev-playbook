@@ -27,6 +27,9 @@
       tags: ['dock']
     - role: ansible-pyenv
       pyenv_brew_path: /opt/homebrew/bin
+      pyenv_python_versions:
+      - "3.9.4"
+      pyenv_global: "3.9.4 system"
       tags: ['python']
     - role: rvm.ruby
       tags: ruby
